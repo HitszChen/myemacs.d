@@ -2,7 +2,7 @@
 ;; magit
 (setq magit-last-seen-setup-instructions "1.4.0")
 (require 'magit)
-(setq magit-git-executable "/usr/local/bin/git")
+(setq magit-git-executable "/usr/bin/git")
 (global-set-key (kbd "C-c g t") 'magit-status)
 
 (defadvice magit-status (around magit-fullscreen activate)
